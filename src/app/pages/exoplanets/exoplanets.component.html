@@ -1,1 +1,57 @@
-<p>exoplanets works!</p>
+<h2>Exoplanetas</h2>
+<p>
+  Lista de Exoplanetas detectados pela Administração Nacional da
+  Aeronáutica e Espaço (NASA), até 16/8/2022.
+</p>
+
+<div class="table-filter-container">
+  <div class="filter">
+    <mat-form-field appearance="standard">
+      <mat-label>Filtro</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. 11 Com b" #input>
+    </mat-form-field>
+  </div>
+
+  <div class="mat-elevation-z8" class="table-container">
+    <table mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Nome</th>
+        <td mat-cell *matCellDef="let exoplanet">{{ exoplanet.name }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="stars">
+        <th mat-header-cell *matHeaderCellDef>N° de Estrelas</th>
+        <td mat-cell *matCellDef="let exoplanet">{{ exoplanet.stars }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="moons">
+        <th mat-header-cell *matHeaderCellDef>N° de Luas</th>
+        <td mat-cell *matCellDef="let exoplanet">{{ exoplanet.moons }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="year">
+        <th mat-header-cell *matHeaderCellDef>Ano de descoberta</th>
+        <td mat-cell *matCellDef="let exoplanet">{{ exoplanet.year }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="details">
+        <th mat-header-cell *matHeaderCellDef>Detalhes</th>
+        <td mat-cell *matCellDef="let exoplanet">
+          <button mat-mini-fab color="primary">
+            <mat-icon>travel_explore</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <mat-paginator
+      [pageSizeOptions]="[5, 10, 20, 50, 100]"
+      showFirstLastButtons
+      aria-label="Select page of periodic exoplanets"
+    >
+    </mat-paginator>
+  </div>
+</div>

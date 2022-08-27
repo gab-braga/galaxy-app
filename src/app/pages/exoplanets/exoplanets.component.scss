@@ -1,0 +1,27 @@
+.table-filter-container {
+  background-color: #F5F5F5;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.table-container {
+  position: relative;
+  min-height: 200px;
+  max-height: 50vh;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  background: none;
+}
+
+.filter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  mat-form-field {
+    width: 90%;
+  }
+}
