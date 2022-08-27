@@ -1,0 +1,110 @@
+.home {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: #E1EEEB;
+    font-size: 50px;
+    width: 500px;
+    line-height: 60px;
+    text-align: center;
+  }
+}
+
+#planet {
+  width: 200px;
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  animation: space;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#astronauta {
+  width: 200px;
+  position: fixed;
+  bottom: 100px;
+  right: 80px;
+  animation: gravidade;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#stars {
+  width: 200px;
+  position: fixed;
+  top: 150px;
+  left: 300px;
+  animation: highlight;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#cometa {
+  width: 200px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  animation: move;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes gravidade {
+  0% {
+    transform: translateY(-70px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(-70px);
+  }
+}
+
+@keyframes space {
+  0% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes move {
+  0% {
+    top: -200px;
+    right: -200px;
+  }
+  100% {
+    top: 120vh;
+    right: 120vw;
+  }
+}
+
+@keyframes highlight {
+  0%{
+      filter: brightness(1);
+      transform: scale(1);
+  }
+  20%{
+      filter: brightness(1.5);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100%{
+      filter: brightness(1);
+      transform: scale(1);
+  }
+}
