@@ -37,7 +37,7 @@
       <ng-container matColumnDef="details">
         <th mat-header-cell *matHeaderCellDef>Detalhes</th>
         <td mat-cell *matCellDef="let exoplanet">
-          <button mat-mini-fab color="primary">
+          <button mat-mini-fab color="primary" (click)="openDetailsDialog(exoplanet)">
             <mat-icon>travel_explore</mat-icon>
           </button>
         </td>
