@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ExoplanetsComponent } from './exoplanets/exoplanets.component';
 import { DetailsDialogComponent } from './details-dialog/details-dialog.component';
 import { MaterialModule } from '../shared/material/material.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -11,7 +12,8 @@ import { MaterialModule } from '../shared/material/material.module';
   declarations: [
     HomeComponent,
     ExoplanetsComponent,
-    DetailsDialogComponent
+    DetailsDialogComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { MaterialModule } from '../shared/material/material.module';
   exports: [
     HomeComponent,
     ExoplanetsComponent,
-    DetailsDialogComponent
+    DetailsDialogComponent,
+    NotFoundComponent
   ]
 })
 export class PagesModule { }

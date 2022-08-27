@@ -1,0 +1,40 @@
+.error-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+  .error-message {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      color: #E1EEEB;
+      font-size: 130px;
+      line-height: 120px;
+    }
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25vh)
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
