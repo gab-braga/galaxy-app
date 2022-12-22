@@ -1,27 +1,22 @@
-# AppGalaxy
+# Galaxy
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+## Descrição
+Galaxy é um aplicativo para visualização de informações de objetos extraplanetarios. Como meio de estudo e prática, ele foi desevolvido.
 
-## Development server
+## Tecnologias
+* Angular
+* Angular CLI
+* Angular Material
+* Json Server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Visualização
+[Veja](https://f-gabriel-braga.github.io/app-galaxy)
+# Home
+![app-galayx1](https://user-images.githubusercontent.com/66652642/209035936-17e73fe1-2372-4d1e-af7d-6031bd1cc928.PNG)
+# Exoplanetas
+![app-galayx2](https://user-images.githubusercontent.com/66652642/209035940-83d278f7-f8f6-4d33-8231-e24735b12e8f.PNG)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Servidor de Desenvolvimento
+Ao clonar o repositório, execute `npm install` para instalar as depências necessárias.
+Execute `ng serve` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`.
