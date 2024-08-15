@@ -10,7 +10,6 @@ Galaxy é um aplicativo para visualização de informações de objetos extrapla
 * Json Server
 
 # Visualização
-[Veja](https://f-gabriel-braga.github.io/app-galaxy)
 # Home
 ![app-galayx1](https://user-images.githubusercontent.com/66652642/209035936-17e73fe1-2372-4d1e-af7d-6031bd1cc928.PNG)
 # Exoplanetas
